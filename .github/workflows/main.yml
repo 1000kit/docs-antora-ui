@@ -24,7 +24,7 @@ jobs:
           artifacts: "build/ui-bundle.zip"        
           makeLatest: "latest"      
       - name: Trigger website update
-        uses: uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.TKIT_CI_PAT }}
           repository: 1000kit/1000kit.github.io
